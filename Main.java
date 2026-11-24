@@ -8,9 +8,9 @@ void main()
 as input and calculates the BMI, then prints it.*/
 //• Input: Weight (kg) = 70, Height (m) = 1.75
 //• Expected Output: BMI = 22.86
-    System.out.println("Enter obtained marks:70");
+    System.out.println("Enter obtained marks:");
     double weight1=input.nextDouble();
-    System.out.println("Enter total marks:1.75");
+    System.out.println("Enter total marks:");
     double Height1=input.nextDouble();
     double BMI=Height1 * Height1;
     System.out.println("BMI = "+weight1/BMI);
@@ -22,9 +22,9 @@ calculates the percentage, then prints it. */
 //• Input: Obtained Marks = 85, Total Marks = 100
 //• Expected Output: Percentage = 85.0%
 
-    System.out.println("Enter obtained marks:85");
+    System.out.println("Enter obtained marks:");
     int obtainedMarks=input.nextInt();
-    System.out.println("Enter total marks:100");
+    System.out.println("Enter total marks:");
     int totalMarks=input.nextInt();
     double percentage=obtainedMarks*100;
     System.out.println("Percentage = "+percentage/totalMarks+"%");
@@ -35,9 +35,9 @@ calculates the percentage, then prints it. */
 as input, then converts and prints the amount in another currency.*/
 //• Input: Amount in USD = 100, Exchange Rate (USD to EUR) = 0.85
 //• Expected Output: Amount in EUR = 85.0
-    System.out.println("Enter amount in USD:100");
+    System.out.println("Enter amount in USD:");
     double amountUSD=input.nextDouble();
-    System.out.println("Exchange Rate (USD to EUR):0.85");
+    System.out.println("Exchange Rate (USD to EUR):");
     double exchangeRate=input.nextDouble();
     System.out.println("Amount in EUR = "+exchangeRate*amountUSD);
     System.out.println("..............................................");
