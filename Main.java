@@ -3,14 +3,15 @@ import java.lang.StringBuilder;
 void main()
 {
     Scanner input=new Scanner(System.in);
-
+    input.useLocale(Locale.US);
 /*1. Develop a program that takes the weight (in kilograms) and height (in meters)
 as input and calculates the BMI, then prints it.*/
 //• Input: Weight (kg) = 70, Height (m) = 1.75
 //• Expected Output: BMI = 22.86
-
-    int weight1=70;
-    double Height1=1.75;
+    System.out.println("Enter obtained marks:70");
+    double weight1=input.nextDouble();
+    System.out.println("Enter total marks:1.75");
+    double Height1=input.nextDouble();
     double BMI=Height1 * Height1;
     System.out.println("BMI = "+weight1/BMI);
     System.out.println("..............................................");
@@ -26,7 +27,7 @@ calculates the percentage, then prints it. */
     System.out.println("Enter total marks:100");
     int totalMarks=input.nextInt();
     double percentage=obtainedMarks*100;
-    System.out.println("Percentage = "+percentage/100+"%");
+    System.out.println("Percentage = "+percentage/totalMarks+"%");
     System.out.println("..............................................");
 //.................................................................................
 
@@ -34,9 +35,10 @@ calculates the percentage, then prints it. */
 as input, then converts and prints the amount in another currency.*/
 //• Input: Amount in USD = 100, Exchange Rate (USD to EUR) = 0.85
 //• Expected Output: Amount in EUR = 85.0
-
-    int amountUSD=100;
-    double exchangeRate=0.85;
+    System.out.println("Enter amount in USD:100");
+    double amountUSD=input.nextDouble();
+    System.out.println("Exchange Rate (USD to EUR):0.85");
+    double exchangeRate=input.nextDouble();
     System.out.println("Amount in EUR = "+exchangeRate*amountUSD);
     System.out.println("..............................................");
 //.................................................................................
